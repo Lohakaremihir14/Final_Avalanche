@@ -22,6 +22,7 @@ Use a wallet or script to interact with the contract's functions.
 ## Example ##
 Item Prices
 
+```
  constructor() ERC20("Degen", "DGN") {
         // Set initial item prices
         itemPrices["white"] = 12;
@@ -39,7 +40,7 @@ function redeemItem(string memory itemName) public payable
         userItems[msg.sender] = itemName;
         emit Redeemed(msg.sender, itemName, itemPrices[itemName]);
         }
-
+```
 
 ## Author ##
 Mihir Lohakare 
